@@ -1,0 +1,611 @@
+:root {
+  --primary_color: #d90b4c;
+  --secondary_color: #0b212a;
+  --orange_color: #f25334;
+  --white_color: rgb(255, 255, 255);
+  --background_color: #f1f3f2;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Animation Overflow  */
+.overflow_content {
+  overflow: hidden !important;
+}
+
+.section_spacing {
+  margin-top: 170px;
+}
+
+/* Navbar style  */
+.navbar_bg {
+  background-color: var(--primary_color);
+}
+
+.navbar_image {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.navbar_title {
+  color: white;
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar_sub_title {
+  font-size: 14px;
+  color: white;
+}
+
+.navbar_icon {
+  color: var(--secondary_color);
+  font-size: 30px;
+}
+
+.nav-link {
+  color: var(--secondary_color) !important;
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-link:hover {
+  color: white !important;
+  font-size: 20px;
+}
+
+.navbar_contact_btn {
+  color: var(--primary_color);
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bounce_navbar_btn {
+  animation-delay: 0s;
+}
+
+.offcanvas_background {
+  background: var(--secondary_color);
+}
+
+.offcanvas_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.offcanvas-title {
+  color: white;
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.offcanvas_close_btn {
+  background-color: transparent;
+}
+
+.offcanvas_close_icon {
+  color: white;
+  font-size: 25px;
+}
+
+.link_sm_card {
+  background-color: var(--primary_color);
+  border-radius: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+}
+
+.sm_link_text {
+  color: white;
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Hero CSS  */
+.hero_background {
+  background-color: var(--secondary_color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero_spacing {
+  min-height: 200px; /* Ensures space is reserved for one line */
+  display: inline-block; /* Prevents extra spacing */
+}
+
+.hero_heading {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 110px;
+}
+
+.primary_hero_heading {
+  color: var(--white_color);
+  line-height: 60px;
+}
+
+.secondary_hero_heading {
+  color: var(--primary_color);
+}
+
+.hero_text {
+  width: 50%;
+}
+
+.hero_span_paragraph {
+  color: var(--primary_color);
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.count_icon {
+  color: white;
+  font-size: 25px;
+}
+.count_number {
+  font-family: "Racing Sans One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
+  color: var(--primary_color);
+}
+
+.count_paragraph {
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+
+.btn_hero {
+  background-color: var(--primary_color);
+  font-family: "Racing Sans One", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 32px;
+  border-radius: 40px;
+}
+
+.arrow_gif {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  margin-left: 20%;
+}
+
+.hero_card {
+  height: 400px;
+  width: 20%;
+  background-color: var(--secondary_color);
+  position: absolute;
+  bottom: 0; /* Fixes the hero card to the bottom */
+  left: 0;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.hero_avatar_image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero_icon {
+  font-size: 80px;
+  color: white;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+}
+
+/* Video_banner  */
+video {
+  border-radius: 20px; /* Adjust the value as needed */
+}
+
+.video_banner {
+  height: 600px;
+  width: 100%;
+}
+
+.video_title {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+}
+
+.video_icon {
+  font-size: 40px;
+  color: var(--primary_color);
+  margin-left: 15px;
+}
+
+/* Services  */
+.service_line_height {
+  line-height: 60px;
+}
+
+.service_span {
+  color: var(--primary_color);
+}
+
+.service_btn_icon {
+  font-size: 34px;
+  color: var(--primary_color);
+  margin-right: 15px;
+}
+
+.service_btn_title {
+  font-weight: 600;
+}
+
+.service_icon {
+  font-size: 38px;
+  color: var(--primary_color);
+}
+
+.service_title {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 38px;
+}
+
+.service_btns {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+}
+
+/* About style  */
+.about_header_icon {
+  font-size: 70px;
+  /* margin-left: 15px;  */
+  color: black !important;
+}
+
+.about_image {
+  height: 150px;
+  width: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.about_avatar {
+  height: 150px;
+  width: 100%;
+  border-radius: 40px;
+  object-fit: contain;
+  background-color: var(--primary_color);
+}
+
+.contact_btn {
+  height: 70px;
+  /* width: 50%;  */
+  /* border-radius: 40px;  */
+  object-fit: cover;
+}
+
+/* clients  */
+.clients_banner_background {
+  background-color: var(--secondary_color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+/* Reviews  */
+.review_card {
+  min-height: 400px;
+  width: 100%;
+  border-radius: 40px;
+  background-color: var(--primary_color);
+}
+
+.review_title {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+/* Styling for the container */
+.container_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Bouncing Text */
+.bouncing-text {
+  display: inline-block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px); /* Adjust the bounce height */
+  }
+}
+
+/* Hero Bouncing text  */
+/* Bouncing Text */
+.hero_heading {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Add delay so they don't bounce at the same time */
+.primary_hero_heading {
+  animation-delay: 0s;
+}
+.secondary_hero_heading {
+  animation-delay: 0.5s;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* Service Bouncing text  */
+.service_headings {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.service_primary {
+  animation-delay: 0s;
+}
+
+.service_secondary {
+  animation-delay: 0.5s;
+}
+
+/* About Bouncing Text  */
+.about_headings {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.about_primary {
+  animation-delay: 0s;
+}
+
+.about_secondary {
+  animation-delay: 0.5s;
+}
+
+/* Clients Banner Animation  */
+/* Container to prevent overflow */
+.text-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--secondary_color);
+  padding: 20px 0;
+  position: relative;
+}
+
+/* Moving Text */
+.moving-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  animation: moveText 30s linear infinite;
+}
+
+.client_icon {
+  margin-right: 12px;
+}
+
+/* Keyframes for moving text */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Review Animation  */
+.review_background {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+/* reviews background style  */
+.video-background {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+#background-video {
+  border-radius: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire area */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensures the content sits on top of the video */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensures the content stays above the video */
+}
+
+.review_primary {
+  animation-delay: 0s;
+}
+
+.review_secondary {
+  animation-delay: 0.5s;
+}
+
+.review_third {
+  animation-delay: 1s;
+}
+
+/* Footer Style  */
+.footer_logo {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+
+.footer_title {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subscribe_heading {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--primary_color);
+}
+
+.subscribe_sub_heading {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.subscribe_form {
+  background-color: var(--primary_color);
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.subscribe_form::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+.subscribe_sub_container {
+  background-color: var(--primary_color);
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.subscribe_icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.footer_name {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+}
+
+.footer_span {
+  color: var(--primary_color);
+}
+
+/* Footer New Style  */
+.footer_background {
+  background-color: var(--secondary_color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer_icons {
+  color: var(--primary_color);
+  font-size: 25px;
+}
+
+.footer_icons:hover {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.footer_links:hover {
+  color: var(--primary_color) !important;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.contact_icons {
+  color: var(--primary_color);
+  margin-right: 15px;
+  font-size: 23px;
+}
+
+.underline_text {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, transparent 50%, #d90b4c 50%);
+  padding: 0.1em 0.4em;
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+}

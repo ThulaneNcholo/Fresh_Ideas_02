@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Main css  -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <!-- Main css  -->
+    <link rel="stylesheet" href="assets/css/media_query.css" />
+
+    <!-- Archivo+Black Font Family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Racing+Sans Font Family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS animation  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+      .hero_image {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/gif02.gif");
+        height: 650px;
+        width: 80%;
+        background-size: cover;
+        border-radius: 40px;
+        position: relative;
+      }
+
+      .hero_text_background {
+        background-image: url("assets/images/hero_background_gif.gif");
+        background-size: cover;
+        height: 150px;
+        width: 150px;
+      }
+
+      .service_background {
+        background-image: url("assets/images/service_background.png");
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-size: cover;
+        width: 100%;
+      }
+
+      .contact_banner {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/banner_gif_background.gif");
+        padding-top: 150px;
+        padding-bottom: 150px;
+        width: 100%;
+        background-size: cover;
+      }
+
+      .sm_card_01 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_01.png");
+        background-size: cover;
+      }
+
+      .sm_card_02 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_02.png");
+        background-size: cover;
+      }
+
+      .sm_card_03 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_03.png");
+        background-size: cover;
+      }
+
+      .sm_card_04 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_04.png");
+        background-size: cover;
+      }
+
+      /* service buttons  */
+      .service_btn_bg_01 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_01.png");
+        background-size: cover;
+      }
+
+      .service_btn_bg_02 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_02.png");
+        background-size: cover;
+      }
+
+      .service_btn_bg_03 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_03.png");
+        background-size: cover;
+      }
+
+      .service_btn_bg_04 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_04.png");
+        background-size: cover;
+      }
+      
+      
+
+      @media screen and (max-width: 576px) {
+        .hero_image {
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.329),
+              rgba(0, 0, 0, 0.329)
+            ),
+            url("assets/images/gif02.gif");
+          height: 650px;
+          width: 100%;
+          background-size: cover;
+          border-radius: 40px;
+          position: relative;
+        }
+
+        .service_background {
+          background-image: url("assets/images/service_small_screen_bg.png");
+          padding-top: 100px;
+          padding-bottom: 100px;
+          background-size: contain;
+          width: 100%;
+        }
+      }
+    </style>
+
+    <title>Fresh Ideas Consulting</title>
+  </head>
+  <body>
+    <!-- ======= Navbar  ======= -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar_bg py-4 shadow fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center mb-0" href="#">
+          <img
+            src="assets/images/fresh_lightbulb_logo.png"
+            class="navbar_image"
+            alt=""
+          />
+          <h3 class="navbar_title mb-0">FRESH IDEAS.</h3>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="bi bi-list navbar_icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button
+              type="button"
+              class="btn btn-light rounded-pill px-5 navbar_contact_btn py-3 shadow service_headings bounce_navbar_btn"
+            >
+              Get started
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======= Small Screen Menu offcanvas ======= -->
+    <div
+      class="offcanvas offcanvas-start offcanvas_background"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">FRESH IDEAS</h5>
+        <button
+          class="border-0 offcanvas_close_btn"
+          data-bs-dismiss="offcanvas"
+        >
+          <i class="bi bi-x-lg offcanvas_close_icon"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row mt-5">
+          <div class="col-12 mb-4">
+            <div
+              class="link_sm_card px-3 py-4 d-flex align-items-center justify-content-center sm_card_01"
+            >
+              <h3 class="sm_link_text">HOME</h3>
+            </div>
+          </div>
+          <div class="col-12 mb-4">
+            <div
+              class="link_sm_card px-3 py-4 d-flex align-items-center justify-content-center sm_card_02"
+            >
+              <h3 class="sm_link_text">SERVICES</h3>
+            </div>
+          </div>
+          <div class="col-12 mb-4">
+            <div
+              class="link_sm_card px-3 py-4 d-flex align-items-center justify-content-center sm_card_03"
+            >
+              <h3 class="sm_link_text">ABOUT</h3>
+            </div>
+          </div>
+          <div class="col-12 mb-4">
+            <div
+              class="link_sm_card px-3 py-4 d-flex align-items-center justify-content-center sm_card_04"
+            >
+              <h3 class="sm_link_text">CONTACT</h3>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around mt-5">
+          <i class="bi bi-whatsapp footer_icons text-white"></i>
+          <i class="bi bi-linkedin footer_icons text-white"></i>
+          <i class="bi bi-facebook footer_icons text-white"></i>
+          <i class="bi bi-instagram footer_icons text-white"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Hero Component  ======= -->
+    <section class="hero_background">
+      <div class="container">
+        <div class="row overflow_content">
+          <div class="col-12 col-lg-6 mt-4">
+            <div>
+              <h1
+                class="hero_heading primary_hero_heading d-flex justify-content-end mt-5"
+              >
+                Innovate.
+              </h1>
+              <h1
+                class="hero_heading secondary_hero_heading d-flex justify-content-start"
+              >
+                Transform.
+              </h1>
+            </div>
+            <div class="hero_text_background"></div>
+
+            <div class="d-flex justify-content-end">
+              <p
+                class="text-white hero_text mt-3"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                At
+                <span class="hero_span_paragraph">Fresh Ideas Consulting</span>,
+                we help businesses scale, innovate, and thrive. From startups to
+                established enterprises, we offer tailored solutions in
+                Enterprise Development, BBBEE compliance, and strategic
+                consulting to drive long-term growth and success. Let us be your
+                trusted partner in navigating business challenges and unlocking
+                your potential.
+              </p>
+            </div>
+
+            <div class="d-flex justify-content-end mb-5 mt-5">
+              <div class="row">
+                <div
+                  class="col-12 col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
+                  <div class="d-flex">
+                    <i class="bi bi-plus-circle-fill count_icon"></i>
+                    <h1 class="count_number">100+</h1>
+                  </div>
+                  <p class="count_paragraph">
+                    Businesses transformed through our strategic consulting
+                    services.
+                  </p>
+                </div>
+                <div
+                  class="col-12 col-lg-6"
+                  data-aos="fade-left"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
+                  <div class="d-flex">
+                    <i class="bi bi-plus-circle-fill count_icon"></i>
+                    <h1 class="count_number">10+</h1>
+                  </div>
+                  <p class="count_paragraph">
+                    Years of expertise in business transformation and
+                    compliance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/arrow.gif" alt="" class="arrow_gif mb-4" />
+            <button class="btn btn_hero px-5 py-2 d-flex">
+              <p class="mb-0" style="margin-right: 15px">Contact Us</p>
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </button>
+          </div>
+          <div class="col-12 col-lg-6 d-flex justify-content-end mt-5">
+            <div
+              class="hero_image"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <div class="hero_card">
+                <center>
+                  <img
+                    src="assets/images/image_01.jpg"
+                    alt=""
+                    class="hero_avatar_image shadow mt-5"
+                  />
+                  <img
+                    src="assets/images/header_circle_avatar.jpg"
+                    alt=""
+                    class="hero_avatar_image shadow mt-4"
+                  />
+                  <i class="bi bi-arrow-up-right-circle-fill hero_icon"></i>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Video Banner  ======= -->
+    <section class="container section_spacing overflow_content">
+      <div class="d-flex">
+        <h1
+          class="video_title bouncing-text mt-3 text-uppercase"
+          id="bounceText"
+        >
+          Impact
+        </h1>
+        <i class="bi bi-arrow-up-right-circle-fill video_icon"></i>
+      </div>
+      <video
+        class="video_banner"
+        autoplay
+        loop
+        muted
+        data-aos="fade-up-right"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <source
+          src="assets/images/team_video.mp4"
+          type="video/mp4"
+          class="rounded-video shadow"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- ======= Services heading ======= -->
+    <section class="container section_spacing">
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-3 overflow_content">
+          <h1
+            class="video_title service_line_height service_headings service_primary mt-5"
+          >
+            OUR
+          </h1>
+          <h1 class="video_title service_headings service_secondary">
+            <span class="service_span">SERVICES</span>
+          </h1>
+          <p data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+            We provide strategic business solutions that drive growth, enhance
+            compliance, and empower enterprises to succeed in a competitive
+            market. Our tailored approach ensures sustainable development and
+            measurable impact.
+          </p>
+        </div>
+        <div class="col-12 col-lg-6 mb-3">
+          <div class="row overflow_content">
+            <div
+              class="col-12 col-lg-6 mb-4"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-dark service_btns shadow w-100 rounded-pill d-flex align-items-center px-5 border-0 service_btn_bg_01"
+              >
+                <i class="bi bi-globe service_btn_icon text-white"></i>
+                <p class="mb-0 service_btn_title text-white">Growth</p>
+              </button>
+            </div>
+            <!-- end col  -->
+            <div
+              class="col-12 col-lg-6 mb-4"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-dark service_btns shadow w-100 rounded-pill d-flex align-items-center px-5 border-0 service_btn_bg_02"
+              >
+                <i class="bi bi-globe service_btn_icon text-white"></i>
+                <p class="mb-0 service_btn_title text-white">Advisory</p>
+              </button>
+            </div>
+            <!-- end col  -->
+            <div
+              class="col-12 col-lg-6 mb-4"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-dark service_btns shadow w-100 rounded-pill d-flex align-items-center px-5 border-0 service_btn_bg_03"
+              >
+                <i class="bi bi-globe service_btn_icon text-white"></i>
+                <p class="mb-0 service_btn_title text-white">Development</p>
+              </button>
+            </div>
+            <!-- end col  -->
+            <div
+              class="col-12 col-lg-6 mb-4"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-dark service_btns shadow w-100 rounded-pill d-flex align-items-center px-5 border-0 service_btn_bg_04"
+              >
+                <i class="bi bi-globe service_btn_icon text-white"></i>
+                <p class="mb-0 service_btn_title text-white">Transformation</p>
+              </button>
+            </div>
+            <!-- end col  -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Services list ======= -->
+    <section class="service_background">
+      <div class="container overflow_content">
+        <hr />
+        <div
+          class="row mb-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">Enterprise Development Program</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+        <hr />
+        <div
+          class="row my-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">Supplier Development Program</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+        <hr />
+        <div
+          class="row my-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">Socio-Economic Development (SED)</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+        <hr />
+        <div
+          class="row my-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">Business Incubation</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+        <hr />
+        <div
+          class="row my-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">SMME Development</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+        <hr />
+        <div
+          class="row my-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">Procurement Support</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+        <hr />
+        <div
+          class="row my-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">Strategic Consulting</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+        <hr />
+        <div
+          class="row my-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">BBBEE Strategy Development</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+        <hr />
+        <div
+          class="row my-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">
+              Workplace Skills Plan Preparation
+            </h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+        <hr />
+        <div
+          class="row mt-5"
+          data-aos="zoom-in-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <h1 class="service_title mb-0">BBBEE Audit Assistance</h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-arrow-up-right service_icon"></i>
+          </div>
+        </div>
+        <!-- end service item  -->
+      </div>
+    </section>
+
+    <!-- ======= About ======= -->
+    <section class="container section_spacing">
+      <h1
+        class="video_title service_line_height d-flex justify-content-end about_primary about_headings"
+      >
+        Fresh Ideas
+      </h1>
+      <h1 class="video_title service_span about_secondary about_headings">
+        Consulting
+        <span
+          ><i class="bi bi-arrow-up-right-circle about_header_icon"></i
+        ></span>
+      </h1>
+
+      <div class="row mt-5 overflow_content">
+        <div class="col-12 col-lg-5 mb-5">
+          <div class="row">
+            <div
+              class="col-12"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/images/about_image_05.jpg"
+                alt=""
+                class="about_image shadow mb-4"
+              />
+            </div>
+            <div
+              class="col-6"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/images/about_avatar_image.png"
+                alt=""
+                class="shadow about_avatar"
+              />
+            </div>
+            <div
+              class="col-6"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/images/freshIdeas_logo.png"
+                alt=""
+                class="about_image shadow p-3"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="co-12 col-lg-7 overflow_content">
+          <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+            Founded in 2016, Fresh Ideas Consulting is a 100% black
+            female-youth-owned BBBEE consultancy dedicated to empowering
+            businesses across South Africa. With a strong focus on innovation,
+            collaboration, and sustainable growth, we help businesses overcome
+            challenges, optimize operations, and unlock their full potential.
+          </p>
+          <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
+            Through our strategic approach, we have transformed underperforming
+            SMMEs into thriving enterprises by equipping them with the tools,
+            knowledge, and mentorship they need to compete in today’s evolving
+            markets. Our impact extends beyond businesses—we drive economic
+            inclusion, job creation, and industry transformation.
+          </p>
+          <button
+            class="btn btn_hero px-5 py-2 d-flex mt-5"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <p class="mb-0" style="margin-right: 15px">Contact Us</p>
+            <i class="bi bi-arrow-up-right-circle-fill"></i>
+          </button>
+          <!-- <img
+            src="assets/images/contact_btn.gif"
+            class="contact_btn mt-5 rounded-pill"
+            alt=""
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          /> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Clients Banner   ======= -->
+    <div
+      class="text-container section_spacing"
+      style="padding-bottom: 70px; padding-top: 50px"
+    >
+      <div class="moving-text">
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Trusted.</span
+        >
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Partners.</span
+        >
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Success.</span
+        >
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Growth.</span
+        >
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Impact.</span
+        >
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Innovation.</span
+        >
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Empowered.</span
+        >
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Transformation</span
+        >
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Collaboration.</span
+        >
+        <span class="mx-3"
+          ><i class="bi bi-check-circle client_icon"></i>Excellence.</span
+        >
+      </div>
+    </div>
+
+    <!-- ======= Why Choose Us    ======= -->
+    <section class="mx-0">
+      <div class="video-background mx-0">
+        <video autoplay muted loop id="background-video">
+          <source
+            src="assets/images/review_background_video.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="content">
+          <div class="container">
+            <h1
+              class="video_title service_line_height mb-4 about_headings review_primary"
+            >
+              WHY
+            </h1>
+            <h1
+              class="video_title service_span service_line_height text-white about_headings review_secondary"
+            >
+              CHOOSE
+            </h1>
+            <h1 class="video_title about_headings review_third">US</h1>
+            <div class="row mt-5 overflow_content">
+              <div
+                class="col-12 col-lg-4 mb-3"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                <div class="review_card p-5 d-flex align-items-center h-100">
+                  <div>
+                    <h4 class="review_title text-uppercase mb-3">
+                      Personalization
+                    </h4>
+                    <p class="text-light">
+                      We tailor our solutions to fit your business’s unique
+                      needs, ensuring strategies that deliver real, measurable
+                      results.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-4 mb-3"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                <div class="review_card p-5 d-flex align-items-center h-100">
+                  <div>
+                    <h4 class="review_title text-uppercase mb-3">Expertise</h4>
+                    <p class="text-light">
+                      Our team brings years of experience in BBBEE compliance,
+                      enterprise development, and supply chain management to
+                      help you navigate complex challenges.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-4 mb-3"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                <div class="review_card p-5 d-flex align-items-center h-100">
+                  <div>
+                    <h4 class="review_title text-uppercase mb-3">Results</h4>
+                    <p class="text-light">
+                      We focus on actionable strategies that drive long-term
+                      growth and sustainable success, supporting you every step
+                      of the way.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact Banner ======= -->
+    <section class="contact_banner">
+      <div class="container">
+        <center>
+          <h1 class="video_title service_span">FRESH</h1>
+          <h1 class="video_title service_span">IDEAS</h1>
+          <p class="text-white w-50">
+            Let’s take your business to the next level. Contact us today to
+            discuss how Fresh Ideas Consulting can support your growth and
+            success
+          </p>
+          <button class="btn btn_hero px-5 py-2 d-flex mt-5">
+            <p class="mb-0" style="margin-right: 15px">Contact Us</p>
+            <i class="bi bi-arrow-up-right-circle-fill"></i>
+          </button>
+        </center>
+      </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <section class="footer_background">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <h5 class="footer_title text-white mb-4 underline_text">
+              FRESH IDEAS
+            </h5>
+            <p class="text-white">
+              At Fresh Ideas Consulting, we’re committed to driving your
+              business success with tailored solutions and expert guidance.
+              Let’s collaborate to transform your vision into reality. Reach out
+              to us for innovative and sustainable business growth.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <i class="bi bi-whatsapp footer_icons"></i>
+              <i class="bi bi-linkedin footer_icons"></i>
+              <i class="bi bi-facebook footer_icons"></i>
+              <i class="bi bi-instagram footer_icons"></i>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <h5 class="footer_title text-white mb-4 underline_text">
+              NAVIGATION
+            </h5>
+            <p class="text-white mb-2 footer_links">HOME</p>
+            <p class="text-white mb-2 footer_links">SERVICES</p>
+            <p class="text-white mb-2 footer_links">ABOUT</p>
+            <p class="text-white mb-2 footer_links">CONTACT</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <h5 class="footer_title text-white mb-4 underline_text">CONTACT</h5>
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-telephone-fill contact_icons"></i>
+              <p class="mb-0 text-white">+27 (0) 82 799 4369</p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-envelope-fill contact_icons"></i>
+              <p class="mb-0 text-white">nontokozo@ficonsulting.co.za</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/javascript/index.js"></script>
+
+    <!-- Animation Scripts start  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Animation Scripts end  -->
+  </body>
+</html>

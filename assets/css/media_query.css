@@ -1,0 +1,40 @@
+@media screen and (max-width: 576px) {
+  .section_spacing {
+    margin-top: 100px;
+  }
+
+  .hero_heading {
+    font-family: "Archivo Black", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 59px;
+  }
+
+  .hero_text {
+    width: 100%;
+  }
+
+  .hero_card {
+    width: 30%;
+  }
+
+  .video_title {
+    font-size: 62px;
+  }
+
+  .video_banner {
+    height: 100%;
+  }
+
+  .service_title {
+    font-size: 24px;
+  }
+
+  .about_headings {
+    font-size: 50px !important;
+  }
+
+  .about_header_icon {
+    font-size: 30px;
+  }
+}
