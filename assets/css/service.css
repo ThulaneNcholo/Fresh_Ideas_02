@@ -1,0 +1,85 @@
+:root {
+  --primary_color: #d90b4c;
+  --secondary_color: #0b212a;
+  --orange_color: #f25334;
+  --white_color: rgb(255, 255, 255);
+  --background_color: #f1f3f2;
+}
+
+/* Navbar Style Start  */
+
+/* Transparent Navbar */
+.transparent-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Navbar changes to solid color when scrolled */
+.scrolled {
+  background-color: var(--primary_color); /* Change to your desired color */
+}
+
+/* Default navbar title color */
+#navbarTitle {
+  color: var(--primary_color); /* Default color */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change title color to white when scrolled */
+.scrolled-title {
+  color: white !important; /* Ensure color change */
+}
+
+.service_nav_links {
+  color: white !important;
+}
+
+/* Header style start  */
+.service_header_title {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 110px;
+  color: white;
+}
+
+.service_banner_heading {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: white;
+}
+
+.server_header_sub {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.service_header_icon {
+  font-size: 25px;
+  margin-left: 20px;
+  color: white;
+}
+
+.header_container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 10px;
+  width: max-content;
+}
+
+/* Service List Style  */
+.service_card_title {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.service_view_icon {
+  font-size: 25px;
+  color: var(--primary_color);
+}

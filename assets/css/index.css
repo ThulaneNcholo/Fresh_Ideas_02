@@ -12,6 +12,14 @@ body {
   font-style: normal;
 }
 
+a {
+  color: inherit !important;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Animation Overflow  */
 .overflow_content {
   overflow: hidden !important;
@@ -300,6 +308,17 @@ video {
   align-items: center;
 }
 
+.service_list_image {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.service_list_icon {
+  color: var(--primary_color);
+}
+
 /* About style  */
 .about_header_icon {
   font-size: 70px;
@@ -337,7 +356,7 @@ video {
   width: 100%;
 }
 
-/* Reviews  */
+/* Why choose us  */
 .review_card {
   min-height: 400px;
   width: 100%;
@@ -350,6 +369,14 @@ video {
   font-weight: 400;
   font-style: normal;
   color: white;
+}
+
+.client_image {
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  background-color: white;
 }
 
 /* Styling for the container */

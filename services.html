@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Main css  -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <!-- Service Css  -->
+    <link rel="stylesheet" href="assets/css/service.css" />
+
+    <!-- Main css  -->
+    <link rel="stylesheet" href="assets/css/media_query.css" />
+
+    <!-- Archivo+Black Font Family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Racing+Sans Font Family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS animation  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+      .service_header_bg {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_header_bg.gif");
+        height: 100vh;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        background-color: #0b212a;
+        padding-top: 200px;
+        background-position: center;
+      }
+
+      .call_atc_banner {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("assets/images/service_banner_02.gif");
+        padding-top: 150px;
+        padding-bottom: 150px;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        padding-top: 200px;
+        background-position: center;
+      }
+
+      .service_list_01 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_01.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      .service_list_02 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_02.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      .service_list_03 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_03.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      .service_list_04 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_04.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      .service_list_05 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_05.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      .service_list_06 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_06.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      .service_list_07 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_07.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      .service_list_08 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_08.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      .service_list_09 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_09.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      .service_list_10 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.329),
+            rgba(0, 0, 0, 0.329)
+          ),
+          url("assets/images/service_image_10.jpg");
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        background-size: cover;
+      }
+
+      /* Menu style  */
+      .sm_card_01 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_01.png");
+        background-size: cover;
+      }
+
+      .sm_card_02 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_02.png");
+        background-size: cover;
+      }
+
+      .sm_card_03 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_03.png");
+        background-size: cover;
+      }
+
+      .sm_card_04 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/sm_bg_04.png");
+        background-size: cover;
+      }
+    </style>
+
+    <title>Fresh Ideas Consulting</title>
+  </head>
+  <body>
+    <!-- ======= Navbar  ======= -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar_bg py-4 shadow fixed-top transparent-navbar"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center mb-0"
+          href="index.html"
+        >
+          <img
+            src="assets/images/fresh_lightbulb_logo.png"
+            class="navbar_image"
+            alt=""
+          />
+          <h3 id="navbarTitle" class="navbar_title mb-0 service_nav_title">
+            FRESH IDEAS.
+          </h3>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="bi bi-list navbar_icon text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active service_nav_links"
+                aria-current="page"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link service_nav_links" href="services.html"
+                >SERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link service_nav_links" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link service_nav_links" href="contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="contact.html">
+              <button
+                type="button"
+                class="btn btn-light rounded-pill px-5 navbar_contact_btn py-3 shadow service_headings bounce_navbar_btn"
+              >
+                Get started
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======= Small Screen Menu offcanvas ======= -->
+    <div
+      class="offcanvas offcanvas-start offcanvas_background"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">FRESH IDEAS</h5>
+        <button
+          class="border-0 offcanvas_close_btn"
+          data-bs-dismiss="offcanvas"
+        >
+          <i class="bi bi-x-lg offcanvas_close_icon"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row mt-5">
+          <div class="col-12 mb-4">
+            <a href="index.html">
+              <div
+                class="link_sm_card px-3 py-4 d-flex align-items-center justify-content-center sm_card_01"
+              >
+                <h3 class="sm_link_text">HOME</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 mb-4">
+            <a href="services.html">
+              <div
+                class="link_sm_card px-3 py-4 d-flex align-items-center justify-content-center sm_card_02"
+              >
+                <h3 class="sm_link_text">SERVICES</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 mb-4">
+            <a href="about.html">
+              <div
+                class="link_sm_card px-3 py-4 d-flex align-items-center justify-content-center sm_card_03"
+              >
+                <h3 class="sm_link_text">ABOUT</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 mb-4">
+            <a href="contact.html">
+              <div
+                class="link_sm_card px-3 py-4 d-flex align-items-center justify-content-center sm_card_04"
+              >
+                <h3 class="sm_link_text">CONTACT</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around mt-5">
+          <i class="bi bi-whatsapp footer_icons text-white"></i>
+          <i class="bi bi-linkedin footer_icons text-white"></i>
+          <i class="bi bi-facebook footer_icons text-white"></i>
+          <i class="bi bi-instagram footer_icons text-white"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Service Header ======= -->
+    <section class="service_header_bg">
+      <div class="header_container">
+        <h1 class="service_header_title">OUR SERVICES</h1>
+        <div class="d-flex justify-content-center">
+          <h4 class="server_header_sub mb-0">SCROLL TO EXPLORE</h4>
+          <i class="bi bi-arrow-down-circle-fill service_header_icon"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Service List ======= -->
+    <section class="container section_spacing">
+      <div class="row overflow_content">
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#EnterpriseOffcanvas"
+            role="button"
+            aria-controls="EnterpriseOffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_01"></div>
+              <h3 class="service_card_title mt-5">
+                Enterprise Development Program
+              </h3>
+              <p class="text-secondary">
+                Empowering emerging businesses with resources, mentorship, and
+                access to funding for sustainability.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#SupplierOffcanvas"
+            role="button"
+            aria-controls="SupplierOffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_02"></div>
+              <h3 class="service_card_title mt-5">
+                Supplier Development Program
+              </h3>
+              <p class="text-secondary">
+                Building a competitive, compliant supplier network to enhance
+                corporate procurement strategies.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#SocioEconomicOffcanvas"
+            role="button"
+            aria-controls="SocioEconomicOffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_03"></div>
+              <h3 class="service_card_title mt-5">
+                Socio-Economic Development (SED)
+              </h3>
+              <p class="text-secondary">
+                Driving meaningful community upliftment through strategic
+                development initiatives.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#IncubationOffcanvas"
+            role="button"
+            aria-controls="IncubationOffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_04"></div>
+              <h3 class="service_card_title mt-5">Business Incubation</h3>
+              <p class="text-secondary">
+                Accelerating business success through supply chain access,
+                branding, and growth support.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#SMMEOffcanvas"
+            role="button"
+            aria-controls="SMMEOffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_05"></div>
+              <h3 class="service_card_title mt-5">SMME Development</h3>
+              <p class="text-secondary">
+                Helping small businesses enhance competitiveness through
+                mentorship, coaching, and digital transformation.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#ProcurementOffcanvas"
+            role="button"
+            aria-controls="ProcurementOffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_06"></div>
+              <h3 class="service_card_title mt-5">Procurement Support</h3>
+              <p class="text-secondary">
+                Aligning procurement practices with BBBEE standards while
+                fostering sustainable supplier relationships.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#StrategicOffcanvas"
+            role="button"
+            aria-controls="StrategicOffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_07"></div>
+              <h3 class="service_card_title mt-5">Strategic Consulting</h3>
+              <p class="text-secondary">
+                Providing expert guidance on compliance, transformation, and
+                operational efficiency.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#BBBEEOffcanvas"
+            role="button"
+            aria-controls="BBBEEOffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_08"></div>
+              <h3 class="service_card_title mt-5">
+                BBBEE Strategy Development
+              </h3>
+              <p class="text-secondary">
+                Designing customized strategies to maximize BBBEE compliance
+                benefits.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#Workplaceffcanvas"
+            role="button"
+            aria-controls="Workplaceffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_09"></div>
+              <h3 class="service_card_title mt-5">
+                Workplace Skills Plan Preparation
+              </h3>
+              <p class="text-secondary">
+                Developing structured training plans that align with business
+                goals and unlock SETA funding.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+        <div
+          class="col-12 col-md-6"
+          data-aos="zoom-out-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <a
+            data-bs-toggle="offcanvas"
+            href="#AuditOffcanvas"
+            role="button"
+            aria-controls="AuditOffcanvas"
+          >
+            <div class="mb-5">
+              <div class="service_list_10"></div>
+              <h3 class="service_card_title mt-5">BBBEE Audit Assistance</h3>
+              <p class="text-secondary">
+                Ensuring seamless BBBEE verification with pre-audit assessments
+                and compliance support.
+              </p>
+              <i class="bi bi-arrow-right-circle-fill service_view_icon"></i>
+            </div>
+          </a>
+        </div>
+        <!-- end col  -->
+      </div>
+    </section>
+
+    <!-- ======= Services Details Offcanvas ======= -->
+    <section>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="EnterpriseOffcanvas"
+        aria-labelledby="EnterpriseOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="EnterpriseOffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_01.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">
+            Enterprise Development Program
+          </h4>
+          <p>
+            Our Enterprise Development Program is designed to empower emerging
+            businesses by equipping them with the tools, skills, and resources
+            needed to thrive. By supporting entrepreneurs at every stage of
+            their journey, we aim to create a pipeline of successful,
+            sustainable businesses. Key components of this program include:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Facilitating access to funding and resources for growth.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Assisting with market readiness to secure supply contracts.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Providing mentorship and capacity-building initiatives that
+                enhance business performance.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="SupplierOffcanvas"
+        aria-labelledby="SupplierOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="SupplierOffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_02.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">
+            Supplier Development Program
+          </h4>
+          <p>
+            We work with businesses to build a reliable and competitive supplier
+            network, enabling them to comply with BBBEE requirements while
+            creating lasting value. Our Supplier Development Program focuses on:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Facilitating access to funding and resources for growth.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Driving innovation through supplier performance improvement.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Strengthening relationships between corporates and their
+                supplier base to ensure long-term collaboration.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="SocioEconomicOffcanvas"
+        aria-labelledby="SocioEconomicOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="SocioEconomicOffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_03.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">
+            Socio-Economic Development (SED)
+          </h4>
+          <p>
+            Our SED initiatives are aimed at uplifting disadvantaged communities
+            by promoting sustainable development and social impact. These
+            initiatives include:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Supporting education, skills training, and job creation efforts.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Collaborating with businesses to develop impactful SED projects
+                aligned with their strategic goals.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Monitoring and measuring the outcomes of SED initiatives to
+                ensure effectiveness.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="IncubationOffcanvas"
+        aria-labelledby="IncubationOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="IncubationOffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_04.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">Business Incubation</h4>
+          <p>
+            Our business incubation services accelerate entrepreneurial success
+            by:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Providing access to supply contracts and linking entrepreneurs
+                with procurement opportunities.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Assisting with funding and resource allocation to drive business
+                growth.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Enhancing professional identities through branding, logo
+                creation, website development, and company profile design.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="SMMEOffcanvas"
+        aria-labelledby="SMMEOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="SMMEOffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_05.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">SMME Development</h4>
+          <p>
+            We are passionate about helping small, medium, and micro enterprises
+            (SMMEs) grow and succeed. Our approach includes:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Conducting comprehensive skills gap analyses and offering
+                targeted mentoring programs.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Implementing sustainability initiatives such as
+                business-to-business coaching, tender application support, and
+                digital presence optimization to enhance competitiveness.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="ProcurementOffcanvas"
+        aria-labelledby="ProcurementOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="ProcurementOffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_06.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">Procurement Support</h4>
+          <p>
+            We help businesses align their procurement practices with BBBEE
+            requirements while ensuring long-term sustainability by:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Creating competitive, supply-chain-ready enterprises with
+                future-proof capabilities.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Shifting the focus from mere compliance to fostering impactful
+                and sustainable supplier relationships.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="StrategicOffcanvas"
+        aria-labelledby="StrategicOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="StrategicOffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_07.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">Strategic Consulting</h4>
+          <p>
+            We provide strategic consulting to maximize BBBEE compliance
+            benefits while minimizing costs through:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Scenario planning and transformation strategies tailored to your
+                business needs.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Optimizing BBBEE compliance strategies to achieve both immediate
+                and long-term goals.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="BBBEEOffcanvas"
+        aria-labelledby="BBBEEOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="BBBEEOffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_08.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">
+            BBBEE Strategy Development
+          </h4>
+          <p>
+            We design comprehensive BBBEE strategies that align with your
+            business objectives, focusing on:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Building long-term value for businesses and their stakeholders.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Identifying opportunities to maximize compliance benefits while
+                creating meaningful transformation impacts.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="Workplaceffcanvas"
+        aria-labelledby="WorkplaceffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="WorkplaceffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_09.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">
+            Workplace Skills Plan Preparation
+          </h4>
+          <p>
+            We assist businesses in developing and implementing workplace skills
+            plans (WSPs) that:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Align with their strategic goals and transformation priorities.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Unlock funding opportunities through Sector Education and
+                Training Authorities (SETAs).
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+      <!-- start offcanvas  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="AuditOffcanvas"
+        aria-labelledby="AuditOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="AuditOffcanvasLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mb-5">
+          <img
+            src="assets/images/service_image_10.jpg"
+            alt=""
+            class="service_list_image shadow-sm"
+          />
+
+          <h4 class="service_details_title mt-5 mb-4">
+            BBBEE Audit Assistance
+          </h4>
+          <p>
+            We provide audit readiness services to ensure seamless BBBEE
+            verification processes, including:
+          </p>
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Preparing documentation and evidence required for audits.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Conducting pre-audit assessments to identify and address gaps.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+          <div class="row mt-4 mb-3">
+            <div class="col-1">
+              <i class="bi bi-arrow-right-circle-fill service_list_icon"></i>
+            </div>
+            <div class="col">
+              <p class="mb-0">
+                Offering support throughout the verification process to achieve
+                optimal outcomes.
+              </p>
+            </div>
+          </div>
+          <!-- end list  -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Call To Action ======= -->
+    <section class="call_atc_banner">
+      <div class="container">
+        <center>
+          <h4 class="text-white">Ready to bring your big idea to life?</h4>
+          <h1 class="service_banner_heading text-white mt-4">
+            Let’s Build Success Together
+          </h1>
+          <a href="contact.html">
+            <button class="btn btn_hero px-5 py-2 d-flex mt-4">
+              <p class="mb-0" style="margin-right: 15px">Contact Us</p>
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </button>
+          </a>
+        </center>
+      </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <section class="footer_background">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <h5 class="footer_title text-white mb-4 underline_text">
+              FRESH IDEAS
+            </h5>
+            <p class="text-white">
+              At Fresh Ideas Consulting, we’re committed to driving your
+              business success with tailored solutions and expert guidance.
+              Let’s collaborate to transform your vision into reality. Reach out
+              to us for innovative and sustainable business growth.
+            </p>
+            <div class="d-flex justify-content-between mt-3">
+              <i class="bi bi-whatsapp footer_icons"></i>
+              <i class="bi bi-linkedin footer_icons"></i>
+              <i class="bi bi-facebook footer_icons"></i>
+              <i class="bi bi-instagram footer_icons"></i>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <h5 class="footer_title text-white mb-4 underline_text">
+              NAVIGATION
+            </h5>
+            <a href="index.html">
+              <p class="text-white mb-2 footer_links">HOME</p>
+            </a>
+            <a href="services.html">
+              <p class="text-white mb-2 footer_links">SERVICES</p>
+            </a>
+            <a href="about.html">
+              <p class="text-white mb-2 footer_links">ABOUT</p>
+            </a>
+            <a href="contact.html">
+              <p class="text-white mb-2 footer_links">CONTACT</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <h5 class="footer_title text-white mb-4 underline_text">CONTACT</h5>
+            <a href="tel:082 799 4369" class="footer_links">
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-telephone-fill contact_icons"></i>
+                <p class="mb-0 text-white">082 799 4369</p>
+              </div>
+            </a>
+            <a href="mailto:nontokozo@ficonsulting.co.za" class="footer_links">
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-envelope-fill contact_icons"></i>
+                <p class="mb-0 text-white">nontokozo@ficonsulting.co.za</p>
+              </div>
+            </a>
+            <a
+              class="footer_links"
+              target="_blank"
+              href="https://www.google.com/maps/place/Office+Park,+5+New+Rd,+Carlswald,+Midrand,+1685/@-25.975815,28.1043589,931m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1e9571d6f8e65ed3:0xb0c69471c17fb82f!8m2!3d-25.9758151!4d28.1092298!16s%2Fg%2F11pw2883mh?hl=en&entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D"
+            >
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-geo-alt-fill contact_icons"></i>
+                <p class="mb-0 text-white">
+                  Office Park, 5 New Road, Carlswald, Midrand, 1685
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/javascript/index.js"></script>
+
+    <!-- Animation Scripts start  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Animation Scripts end  -->
+  </body>
+</html>

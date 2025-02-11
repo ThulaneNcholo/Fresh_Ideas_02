@@ -34,3 +34,26 @@ function changeText(newText) {
 setTimeout(() => {
   changeText("IMPACT");
 }, 3000);
+
+// Transparent Navbar
+// window.addEventListener("scroll", function () {
+//   let navbar = document.querySelector(".navbar");
+//   if (window.scrollY > 50) {
+//     navbar.classList.add("scrolled"); // Adds background color when scrolled
+//   } else {
+//     navbar.classList.remove("scrolled"); // Removes background when at the top
+//   }
+// });
+
+window.addEventListener("scroll", function () {
+  let navbar = document.querySelector(".navbar");
+  let navbarTitle = document.getElementById("navbarTitle");
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled"); // Adds background color
+    navbarTitle.classList.add("scrolled-title"); // Changes text color to white
+  } else {
+    navbar.classList.remove("scrolled");
+    navbarTitle.classList.remove("scrolled-title"); // Resets text color
+  }
+});

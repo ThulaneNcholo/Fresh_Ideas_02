@@ -1,0 +1,68 @@
+:root {
+  --primary_color: #d90b4c;
+  --secondary_color: #0b212a;
+  --orange_color: #f25334;
+  --white_color: rgb(255, 255, 255);
+  --background_color: #f1f3f2;
+}
+
+.contact_header_spacing {
+  margin-top: 200px;
+}
+
+.contact_header_title {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: white;
+}
+
+.contact_logo {
+  height: 100px;
+  width: 100px;
+  border: 10px solid var(--primary_color);
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--primary_color);
+}
+
+.contact_input {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.636) !important;
+}
+
+.form_title {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.message_btn {
+  background-color: var(--primary_color);
+  border-radius: 20px;
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.contact_details_icon {
+  color: white;
+  margin-right: 15px;
+  font-size: 22px;
+}
+
+.contact_details_title {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.google_map {
+  height: 400px;
+  width: 100%;
+  border-style: 0;
+}
