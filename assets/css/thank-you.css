@@ -1,0 +1,30 @@
+:root {
+  --primary_color: #d90b4c;
+  --secondary_color: #0b212a;
+  --orange_color: #f25334;
+  --white_color: rgb(255, 255, 255);
+  --background_color: #f1f3f2;
+}
+
+.success_container {
+  height: 80vh;
+  margin-top: 100px;
+}
+
+.thanks_title {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secondary_color);
+}
+
+.success_icon {
+  font-size: 150px;
+  color: var(--primary_color);
+}
+
+.center_div {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+}
